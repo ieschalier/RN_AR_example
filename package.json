@@ -9,7 +9,8 @@
   },
   "main": "./node_modules/react-native-scripts/build/bin/crna-entry.js",
   "scripts": {
-    "start": "react-native-scripts start",
+    "start":
+      "rm -rf node_modules/gl-matrix/.babelrc && react-native-scripts start",
     "eject": "react-native-scripts eject",
     "android": "react-native-scripts android",
     "ios": "react-native-scripts ios",
@@ -19,6 +20,7 @@
     "preset": "jest-expo"
   },
   "dependencies": {
+    "@expo/browser-polyfill": "^0.0.0-alpha.8",
     "expo": "^27.0.1",
     "expo-three": "^2.2.2-alpha.1",
     "react": "16.3.1",
